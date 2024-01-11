@@ -41,7 +41,7 @@ data class DeviceViewModel(
             val device = this
             return DeviceViewModel(
                 device = device,
-                titleText = device.customName ?: device.name,
+                titleText = device.name,
                 subtitleText = device.subtitleText(),
                 subtitleIcon = device.addressIcon(),
                 icon = device.icon(),
@@ -57,7 +57,6 @@ data class DeviceViewModel(
                 id = this.id,
                 serialNumber = this.serialNumber,
                 name = this.name,
-                customName = this.customName,
                 address = Address("", this.address),
                 port = this.port,
                 androidVersion = this.androidVersion,
@@ -67,7 +66,7 @@ data class DeviceViewModel(
             )
             return DeviceViewModel(
                 device = device,
-                titleText = device.customName ?: device.name,
+                titleText = device.name,
                 subtitleText = device.subtitleText(),
                 subtitleIcon = device.addressIcon(),
                 icon = device.icon(),

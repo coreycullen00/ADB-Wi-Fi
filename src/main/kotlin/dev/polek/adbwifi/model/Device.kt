@@ -6,7 +6,6 @@ data class Device(
     val id: String,
     val serialNumber: String,
     val name: String,
-    var customName: String? = null,
     val address: Address?,
     val port: Int,
     val androidVersion: String,
